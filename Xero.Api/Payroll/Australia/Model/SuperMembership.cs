@@ -13,6 +13,6 @@ namespace Xero.Api.Payroll.Australia.Model
         public Guid SuperFundId { get; set; }
 
         [DataMember]
-        public int EmployeeNumber { get; set; }
+        public string EmployeeNumber { get; set; }
     }
 }
