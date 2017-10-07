@@ -55,5 +55,8 @@ namespace Xero.Api.Payroll.Australia.Model
 
         [DataMember(Name = "TFNExemptionType", EmitDefaultValue = false)]
         public TaxFileNumberExemptionType? TaxFileNumberExemption { get; set; }
+
+        [DataMember(EmitDefaultValue = false)]
+        public ResidencyStatusType? ResidencyStatus { get; set; }
     }
 }
