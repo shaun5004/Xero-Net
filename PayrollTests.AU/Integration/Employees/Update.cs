@@ -24,7 +24,7 @@ namespace PayrollTests.AU.Integration.Employees
                     new SuperMembership
                     {
                         SuperFundId = super_fund_id(),
-                        EmployeeNumber = 3424232
+                        EmployeeNumber = "3424232"
                     }
                 }
                 

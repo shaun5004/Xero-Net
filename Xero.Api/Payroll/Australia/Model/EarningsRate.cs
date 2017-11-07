@@ -11,7 +11,7 @@ namespace Xero.Api.Payroll.Australia.Model
         [DataMember(Name = "EarningsRateID", EmitDefaultValue = false)]
         public Guid Id { get; set; }
 
-        [DataMember(Name = "EarningsType")]
+        [DataMember]
         public string Name { get; set; }
 
         [DataMember]
@@ -33,6 +33,9 @@ namespace Xero.Api.Payroll.Australia.Model
         public bool IsExemptFromSuper { get; set; }
 
         [DataMember(EmitDefaultValue = false)]
+        public bool IsReportableAsW1 { get; set; }
+
+        [DataMember(EmitDefaultValue = false)]
         public decimal? RatePerUnit { get; set; }
 
         [DataMember(EmitDefaultValue = false)]
@@ -42,6 +45,6 @@ namespace Xero.Api.Payroll.Australia.Model
         public decimal? Amount { get; set; }
 
         [DataMember(EmitDefaultValue = false)]
-        public bool AccrueLeave { get; set; }        
+        public bool AccrueLeave { get; set; }
     }
 }
